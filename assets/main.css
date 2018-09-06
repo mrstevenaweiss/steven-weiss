@@ -151,8 +151,7 @@ nav {
   margin-left: 20px;
 }
 
-.blog a,
-.github a {
+a {
   color: white;
   text-decoration: none;
 }
