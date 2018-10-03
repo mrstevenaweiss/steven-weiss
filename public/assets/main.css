@@ -157,7 +157,7 @@ a {
 }
 
 a:hover {
-   text-decoration: underline; 
+   text-decoration: underline;
 }
 
 /*
@@ -172,6 +172,7 @@ a:hover {
 }
 
 ul li {
+  /* change font to be relative */
   width: 100%;
   margin-bottom: 3%;
 }
