@@ -5,7 +5,7 @@
     <title>Canvas Practice</title>
   </head>
   <body>
-    <canvas id="canvas" width="800" height="800"></canvas>
+  <canvas id="canvas" width="800" height="800"></canvas>
   <script>
     const canvas = document.querySelector('#canvas');
     const ctx = canvas.getContext('2d');
@@ -14,7 +14,7 @@
     ctx.strokeStyle = '#BADA55';
     ctx.lineJoin = 'round';
     ctx.lineCap = 'round';
-    ctx.lineWidth = 100;
+    ctx.lineWidth = 75;
     // ctx.globalCompositeOperation = 'multiply';
 
     let isDrawing = false;
@@ -39,7 +39,7 @@
       if (hue >= 360) {
         hue = 0;
       }
-      if (ctx.lineWidth >= 100 || ctx.lineWidth <= 1) {
+      if (ctx.lineWidth >= 75 || ctx.lineWidth <= 1) {
         direction = !direction;
       }
 

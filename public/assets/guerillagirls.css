@@ -52,117 +52,55 @@ table {
   border-spacing: 0;
 }
 
-
 /*
   ========================================
-  GRID
+   BODY
   ========================================
 */
-
-*,
-*:before,
-*:after {
-  -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-      box-sizing: border-box;
-}
-
-.grid,
-.container {
-  width: 540px;
-  margin: 0 auto;
-
-}
-
-.container {
-  margin: 0 auto;
-  padding: 10px 10px 0 10px;
-  padding-right: 10px;
-  padding-left: 10px;
-  border: 0px solid #fff;
-}
-
-/*
-  ========================================
-  Custom Styles
-  ========================================
-*/
-
 body {
-  background: #1f2228;
-  color: #fff;
-  font-family: 'Playfair Display SC', serif;
-  font-weight: 100;
+  background-color: #e2e1dd;
+  opacity: 0.63;
+  font-family: "Futura", "Trebuchet MS", Arial, sans-serif;
 }
 
-h1 {
+
+/*
+  ========================================
+   TYPOGRAPHY
+  ========================================
+*/
+p {
   text-align: center;
-  margin-bottom: 2%;
-  /* font-size: 96px; */
+}
+
+ul {
+  font-size: 14px;
 }
 
 /*
   ========================================
-  HEADER FONTS
+   CLASS RULES
   ========================================
 */
 
-h1.css-header {
-  font-size: 5.35em;
-  margin-bottom: 10%;
+.title, .logo, .letter {
+  text-transform: uppercase;
+  font-family: 'Heebo', sans-serif; font-weight: 900;
+}
+
+.letter {
+  font-size: 64px;
+}
+
+.title {
+  font-size: 56px;
+}
+
+p.logo {
+  font-size: 36px;
 }
 
 
-/*
-  ========================================
-  AUTHOR + NAV LINE
-  ========================================
-*/
-
-nav {
-  margin-bottom: 5%
-}
-
-.author  {
-  display: inline-block;
-  width: 50%;
-  font-size: 2em;
-  text-align: left;
-}
-
-.blog {
-  display: inline-block;
-  width: 20%;
-  margin: 0 10px;
-  text-align: right;
-  font-size: 2em;
-}
-
-.github {
-  display: inline-block;
-  width: 20%;
-  text-align: right;
-  font-size: 2em;
-  margin-left: 20px;
-}
-
-a {
-  color: white;
-  text-decoration: none;
-}
-
-/*
-  ========================================
-  PORTFOLIO
-  ========================================
-*/
-
-.portfolio,
-.nav li {
-  font-family: 'Playfair Display', serif;
-}
-
-ul li {
-  width: 100%;
-  margin-bottom: 1.5%;
+.subtitle {
+  font-size: 16px;
 }
