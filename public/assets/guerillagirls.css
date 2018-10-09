@@ -57,12 +57,22 @@ table {
    BODY
   ========================================
 */
+
+* {
+  box-sizing: border-box;
+}
+
 body {
+  width: 960px;
   background-color: #e2e1dd;
   opacity: 0.63;
   font-family: "Futura", "Trebuchet MS", Arial, sans-serif;
 }
 
+.container {
+  /* margin: 0 auto; */
+  margin: 2% 5%;
+}
 
 /*
   ========================================
@@ -94,6 +104,7 @@ ul {
 
 .title {
   font-size: 56px;
+  word-spacing: 0.01em;
 }
 
 p.logo {
@@ -119,4 +130,14 @@ p.logo {
   margin: 0 auto;
   display: inline-block;
   width: 23%;
+}
+
+/*
+  ========================================
+   FOOTER
+  ========================================
+*/
+
+footer p {
+  display: inline-block;
 }
