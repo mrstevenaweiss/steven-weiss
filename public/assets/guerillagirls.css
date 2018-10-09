@@ -104,3 +104,19 @@ p.logo {
 .subtitle {
   font-size: 16px;
 }
+
+/*
+  ========================================
+   GRID RULES FOR COLUMNS
+  ========================================
+*/
+
+.grid ul {
+  margin: 0 auto;
+}
+
+.col-1-4 {
+  margin: 0 auto;
+  display: inline-block;
+  width: 23%;
+}
