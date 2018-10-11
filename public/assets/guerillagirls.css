@@ -63,7 +63,6 @@ table {
 }
 
 body {
-
   background-color: #e2e1dd;
   opacity: 0.63;
   font-family: "Futura", "Trebuchet MS", Arial, sans-serif;
@@ -72,7 +71,7 @@ body {
 .container {
   /* margin: 0 auto; */
   width: 960px;
-  margin: 2% 10%;
+  margin: 2% 15%;
   justify-content: center;
 }
 
@@ -105,27 +104,51 @@ ul {
 }
 
 .title {
-  font-size: 56px;
-  word-spacing: 0.01em;
+  font-size: 64px;
+  line-height: 0.8;
+  margin-bottom: 15px;
 }
 
 p.logo {
   font-size: 36px;
 }
 
+.fine-print {
+  font-size: 14px;
+  opacity: .75;
+}
+
+.send-money {
+  width: 272px;
+  text-align: left;
+}
 
 .subtitle {
-  font-size: 16px;
+  font-size: 24px;
+  margin-bottom: 40px;
+  box-sizing: border-box;
+  height: 100px;
+  width: 675px;
+  line-height: 1.2;
+  text-align: justify;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 
 /*
   ========================================
    GRID RULES FOR COLUMNS
   ========================================
 */
+.grid {
+  margin-left: 5%;
+}
 
 .grid ul {
   margin: 0 auto;
+  margin-bottom: 10px;
+
 }
 
 .col-1-4 {
@@ -139,6 +162,10 @@ p.logo {
    FOOTER
   ========================================
 */
+
+footer {
+  padding-left: 3%;
+}
 
 footer p {
   display: inline-block;
