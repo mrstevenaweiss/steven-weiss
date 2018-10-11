@@ -99,7 +99,7 @@ body {
   background-color: #3267ad;
 }
 .navy {
-  color: #114c9b;
+
   background-color: #114c9b;
 }
 
@@ -132,5 +132,6 @@ body {
 }
 
 .canary {
+  color: ##f7e25d;
   background-color: #f7e25d;
 }
