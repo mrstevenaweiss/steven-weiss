@@ -52,15 +52,31 @@ table {
   border-spacing: 0;
 }
 
-.grid {
+/* .grid {
   display: grid;
   /* width: 100%;  */
-  height: 90%;
-  grid-template: 100% / repeat(14, 1fr);
+  /* height: 90%;
+  grid-template: 100% / repeat(14, 1fr); }*/
 
+html, body {
+  height: 100%;
 }
-.box {
 
+body {
+  display: flex;
+  height: 100vh;
+}
+
+.col-container {
+    display: flex;
+
+    margin-right:  auto;
+    margin-left: auto;
+}
+
+.box {
+    flex: 1;
+    padding: 50px;
 }
 
 .yellow {
