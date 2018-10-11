@@ -52,94 +52,69 @@ table {
   border-spacing: 0;
 }
 
-/*
-  ========================================
-   BODY
-  ========================================
-*/
+.grid {
+  display: grid;
+  /* width: 100%;  */
+  height: 90%;
+  grid-template: 100% / repeat(14, 1fr);
 
-* {
-  box-sizing: border-box;
+}
+.box {
+
 }
 
-body {
-
-  background-color: #e2e1dd;
-  opacity: 0.63;
-  font-family: "Futura", "Trebuchet MS", Arial, sans-serif;
+.yellow {
+  background-color: #f2d029;
 }
 
-.container {
-  /* margin: 0 auto; */
-  width: 960px;
-  margin: 2% 10%;
-  justify-content: center;
+.lime {
+  background-color: #2ec14b;
 }
 
-/*
-  ========================================
-   TYPOGRAPHY
-  ========================================
-*/
-p {
-  text-align: center;
+.green {
+  background-color: #3e914e;
 }
 
-ul {
-  font-size: 14px;
+.forest {
+  background-color: #107c56;
 }
 
-/*
-  ========================================
-   CLASS RULES
-  ========================================
-*/
-
-.title, .logo, .letter {
-  text-transform: uppercase;
-  font-family: 'Heebo', sans-serif; font-weight: 900;
+.royal {
+  background-color: #3267ad;
+}
+.navy {
+  color: #114c9b;
+  background-color: #114c9b;
 }
 
-.letter {
-  font-size: 64px;
+.purple {
+  background-color: #652a6b;
 }
 
-.title {
-  font-size: 56px;
-  word-spacing: 0.01em;
+.plum {
+  background-color: #934477;
 }
 
-p.logo {
-  font-size: 36px;
+.burgundy {
+  background-color: #a31f58;
 }
 
-
-.subtitle {
-  font-size: 16px;
+.red {
+  background-color: #dd1f1f;
 }
 
-/*
-  ========================================
-   GRID RULES FOR COLUMNS
-  ========================================
-*/
-
-.grid ul {
-  margin: 0 auto;
+.burnt {
+  background-color: #ff5005;
 }
 
-.col-1-4 {
-  margin: 0 auto;
-  display: inline-block;
-  width: 23%;
+.orange{
+  background-color: #ff6e07;
 }
 
-/*
-  ========================================
-   FOOTER
-  ========================================
-*/
+.mango {
+  background-color: #fcb400;
+}
 
-footer p {
-  display: inline-block;
+.canary {
+  background-color: #f7e25d;
 }
