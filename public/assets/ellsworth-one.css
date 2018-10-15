@@ -67,6 +67,14 @@ body {
   height: 100vh;
 }
 
+/* .container {
+  display: grid;
+  grid-auto-columns: repeat(14, 7%);
+  grid-auto-rows: 10000px;
+} */
+
+
+
 .col-container {
     display: flex;
 

@@ -1,4 +1,3 @@
-
 /*
   ========================================
   HTML, CSS RESET
@@ -85,48 +84,36 @@ body {
   letter-spacing: -1px;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0 0 10px 0;
-}
 /*
-.honored-details {
-  margin: 0 0 10px 0;
-} */
+*******
+GRID areas
+*******
+*/
+
+/* .content {
+  grid-area: content;
+}
 
 /*
   ========================================
-  CONTAINER GRID
+  START OF CUSTOM CSS
   ========================================
 */
 
-.honories {
+.canvas {
   display: grid;
-  grid-gap: 10px;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  border: 3px solid black;
+  grid-template-columns: repeat(10, 100px);
+  grid-template-rows: repeat(10, 100px);
 }
 
-.honored {
+.item {
+  /* We center the contents of these items. You can also do this with flexbox too! */
+  display: grid;
+  justify-content: center;
   align-items: center;
-  background: rgb(239, 185, 179, 0.2);
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  display: grid;
-  font-weight: 100;
-  grid-gap: 10px;
-  grid-template-columns: 150px 1fr;
-  padding: 10px;
-}
-
-.honored h2 {
-  font-size: 1.5em;
-  font-weight: 700;
-
-}
-
-.honored-artwork {
-  width: 100%;
+  background-color: #2B337E;
+  border: 3px solid rgba(0, 0, 0);
+  border-radius: 3px;
+  font-size: 35px; */
 }
