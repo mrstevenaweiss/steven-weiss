@@ -125,6 +125,10 @@ h1.fourth-header {
   margin-bottom: 10%;
 }
 
+#title-link {
+  text-decoration: none;
+}
+
 /*
   ========================================
   AUTHOR + NAV LINE
@@ -144,18 +148,19 @@ nav {
 
 .blog {
   display: inline-block;
-  width: 20%;
   margin: 0 10px;
   text-align: right;
   font-size: 2em;
+  float: right;
 }
 
 .github {
   display: inline-block;
-  width: 20%;
   text-align: right;
   font-size: 2em;
   margin-left: 20px;
+  float: right;
+  padding-right: 10px;
 }
 
 a {
@@ -169,7 +174,7 @@ a:hover {
 
 /*
   ========================================
-  PORTOLIO
+  PORTFOLIO
   ========================================
 */
 
