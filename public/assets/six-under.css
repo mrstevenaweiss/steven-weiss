@@ -1,3 +1,21 @@
+:root {
+  --grey: #343436;
+}
+
+/*
+Table of contents
+Global reset
+Minimal base styles (generic)
+Extended base styles (site specific)
+Common shared styles
+Page structure
+Navigation
+Headings
+Footer
+Forms
+Printer styles
+Handheld styles
+*/
 
 /*
   ========================================
@@ -65,38 +83,30 @@ html {
   /* A system font stack so things load nice and quick! */
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-weight: 900;
-  font-size: 10px;
-  color: black;
+  font-weight: normal;
+
   text-shadow: 0 2px 0 rgba(0, 0, 0, 0.07);
 }
 
-/* Inherit box-sizing: border-box; from our <html> selector */
+/* We inherit box-sizing: border-box; from our <html> selector */
 *:before,
 *:after {
   box-sizing: inherit;
 }
 
-body {
-  background-size: 340px, auto;
-  min-height: calc(100vh - 100px);
-  margin: 50px;
-  background-attachment: fixed;
-  letter-spacing: -1px;
-}
-
 h1,
 h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0 0 10px 0;
+h3 {
+  font-weight: normal;
+  margin: 0;
+  font-size: 1.5em;
 }
+
 /*
-.honored-details {
-  margin: 0 0 10px 0;
-} */
+  ========================================
+  CUSTOM CSS
+  ========================================
+*/
 
 /*
   ========================================
@@ -104,11 +114,183 @@ h6 {
   ========================================
 */
 
+.wrapper {
+  max-width: 940px;
+
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-gap: 10px;
+}
+
+.header {
+  width: 100%;
+  position: fixed;
+}
+
+/*
+  ========================================
+  HEADER / NAV / ICONS NAV
+  ========================================
+*/
+
+
+.fas {
+  color: red;
+  font-size: 150%;
+}
+
+.fortune-nav {
+  display: flex;
+  padding: 15px;
+  background-color: black;
+  color: white;
+}
+
+.fortune-nav li {
+  padding-left: 10px;
+}
+
+.six__under {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.icons-nav {
+    text-align: center;
+    background-color: #2d2d2d;
+    height: 100%;
+    left: 0;
+    right: 0;
+}
+
+#button-container {
+  display: inline-block;
+  padding-left: 80px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.icons-nav button {
+  display: inline-block;
+  /* padding: 8px 20px; */
+  font-family: "Helvetica Neue Medium", helvetica, sans-serif;
+  font-size: 16px;
+  height: 31px;
+  width: 85px;
+  margin: 15px;
+  margin-left: 20px;
+  border: 2px solid #979797;
+  background-color: transparent;
+  color: white;
+}
+
+/*
+  ========================================
+  MAIN / ARTICLE / HONORIES
+  ========================================
+*/
+
+main {
+  font-family: Georgia,Times,"Times New Roman",serif;
+  font-size: 16px;
+  padding-top: 125px;
+  max-width: 940px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-gap: 10px;
+}
+
+main > * {
+  color: black;
+  border: 5px solid black;
+  padding: 20px;
+  /* needed for the floated layout*/
+  margin-bottom: 10px;
+  }
+
 .honories {
   display: grid;
   grid-gap: 10px;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
+
+/*
+  ========================================
+  THE HONORED
+  ========================================
+*/
+
+.honored-content-headline > * {
+  display: inline-block;
+  margin-bottom: 25px;
+}
+
+.honored-content-number {
+  -webkit-font-smoothing: antialiased;
+  border: 5px solid #000;
+  float: left;
+  font-family: "Helvetica Neue Bold",helvetica,sans-serif;
+  height: 45px;
+  width: 45px;
+  line-height: 50px;
+  margin-right: 20px;
+  text-align: center;
+}
+
+.honored-content-name {
+  font-size: 3.2em;
+}
+
+.honored-artwork {
+  display: block;
+  border: 5px solid red;
+  width: 100%;
+}
+
+.honored h3 {
+  display: block;
+  font-size: 1em;
+  margin: 0;
+  font-family: "Helvetica Neue Medium", helvetica, sans-serif;
+}
+.honored-nav button {
+  display: inline-block;
+  /* padding: 8px 20px; */
+  font-family: "Helvetica Neue Medium", helvetica, sans-serif;
+  font-size: 16px;
+  height: 31px;
+  width: 85px;
+  margin: 15px;
+  margin-left: 20px;
+  border: 2px solid #979797;
+  background-color: transparent;
+  color: white;
+}
+
+
+@media (max-width: 410px) {
+  body {
+    background-color: pink;
+
+  }
+  /* .menu ul {
+    display: block;
+    grid-area: header;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-gap: 20px;
+  } */
+}
+
+
+/*
 
 .honored {
   align-items: center;
@@ -129,4 +311,4 @@ h6 {
 
 .honored-artwork {
   width: 100%;
-}
+} */
