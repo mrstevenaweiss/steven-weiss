@@ -1,13 +1,16 @@
 
+
 function setup() {
-  createCanvas(600, 400);
+  createCanvas(windowWidth, windowHeight);
 }
 
 function draw() {
   background(0)
   stroke(255);
   noFill();
-  drawCircle(300, 200, 300);
+  drawCircle(windowWidth/2, windowHeight/3, 900);
+  fill(255)
+  rect(windowWidth/2, windowHeight/3, 10, 50);
 }
 
 function drawCircle(x, y, d) {
