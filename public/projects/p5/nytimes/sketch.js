@@ -4,6 +4,7 @@ let buttonClear;
 let hello;
 let keyIndex;
 let spaceButton;
+var key = '085377149a91472ea587824181be1fe6'
 
 function setup () {
   noCanvas();
@@ -44,9 +45,9 @@ function goTimes() {
 
   for (let i = 0; i < movies.length; i++) {
     let movie = movies[i].replace(/ /g, "%20")
-    let request = `https://api.nytimes.com/svc/movies/v2/reviews/search.json?query=${movie}&api-key=085377149a91472ea587824181be1fe6`
+    let request = `https://api.nytimes.com/svc/movies/v2/reviews/search.json?query=${movie}&api-key=${key}`
 
-    loadJSON(request, gotData);
+    loadJSON(request, gotData, 'jsonp');
   }
 }
 
