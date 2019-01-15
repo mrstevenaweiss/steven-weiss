@@ -44,7 +44,7 @@ function goTimes() {
 
   for (let i = 0; i < movies.length; i++) {
     let movie = movies[i].replace(/ /g, "%20")
-    let request = `http://api.nytimes.com/svc/movies/v2/reviews/search.json?query=${movie}&api-key=085377149a91472ea587824181be1fe6`
+    let request = `https://api.nytimes.com/svc/movies/v2/reviews/search.json?query=${movie}&api-key=085377149a91472ea587824181be1fe6`
 
     loadJSON(request, gotData);
   }
