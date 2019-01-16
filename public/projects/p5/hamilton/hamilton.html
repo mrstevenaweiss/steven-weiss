@@ -4,23 +4,31 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>hamilton simulator</title>
-    <style> body {padding: 0; margin: 0;} </style>
     <script src="../p5-libs/test.js"></script>
     <script src="../p5-libs/p5.min.js"></script>
     <script src="../p5-libs/addons/p5.dom.min.js"></script>
     <script src="../p5-libs/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" href="hamilton.css">
     <script src="sketch.js"></script>
+    <script type="text/javascript" src="songs.js"></script>
   </head>
   <body>
     <h1>Hamilton Lottery Simulator</h1>
-    <p>THe simulator assume 10 pairs of tickets available each night with 50,000 people entering each lottery</p>
-    <p>You have 1 in 5,000 chance of winning</p>
-    <p>In order to have a 99% chance of winning the lottery at least one time, you must play ~23,000 times.
+    <p>THe simulator assume 10 pairs of tickets available each night with <span id="entrants" contenteditable>50000</span> people entering each lottery</p>
+    <p>You have 1 in <span id="change"> 5000</span> chance of winning</p>
+    <p>In order to have a <span id="99percent"></span>99% chance of winning the lottery at least one time, you must play ~23,000 times.
     <br>
     <!-- <p>
       Movies: <input id="userinput" type="text" name="movie" value="">
     </p>
-      <button id="main-button" type="button" name="button">Go!</button>
-      <button id="clear-button" type="button" name="button">Clear!!</button> -->
+    <button id="clear-button" type="button" name="button">Clear!!</button> -->
+    <p>
+      <button id="start-button" type="button" name="button">Start Entering Lottery!</button>
+    </p>
+    <p>
+      You have played <span id="total">0</span> times.
+    </p>
+    <p id="results">
+    </p>
   </body>
 </html>
