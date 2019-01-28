@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nyt critic finder jan 19</title>
+    <style> body {padding: 0; margin: 0;} </style>
+
+    <script src="../../assets/p5/p5.min.js"></script>
+    <script src="../../assets/p5/addons/p5.dom.min.js"></script>
+    <script src="../../assets/p5/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" href="nytimes.css">
+    <link href="https://fonts.googleapis.com/css?family=Domine" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=UnifrakturMaguntia" rel="stylesheet">
+
+    <script src="sketch.js"></script>
+  </head>
+  <body>
+    <p id="title">New York Times Criticranker</p>
+    <main class="main" role="main">
+        <h1 id="product-header">
+          These airline movies any good?
+        </h1>
+          <p class="directions">
+            Type in a bunch of movies and see if the NYT Critics co-signed
+          </p>
+          <p class="directions directions-2">
+            use commas between a movie
+          </p>
+
+        <div class="app-container">
+          <textarea id="userinput" type="text" rows="8" cols="80"></textarea>
+          <div class="button-container">
+            <button id="main-button" type="button" name="button">Go!</button>
+            <button id="clear-button" type="button" name="button">Clear!!</button>
+          </div>
+        </div>
+    </main>
+
+  </body>
+</html>

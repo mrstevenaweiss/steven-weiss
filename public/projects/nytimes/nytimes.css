@@ -1,0 +1,203 @@
+:root {
+  --grey: #343436;
+}
+
+/*
+Table of contents
+Global reset
+Minimal base styles (generic)
+Extended base styles (site specific)
+Common shared styles
+Page structure
+Navigation
+Headings
+Footer
+Forms
+Printer styles
+Handheld styles
+*/
+
+/*
+  ========================================
+  HTML, CSS RESET
+  ========================================
+*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* /////////////////// */
+/* /// BASE STYLES /// */
+/* ////////////////// */
+
+/* @mixin for-size($size) {
+  @if $size == phone-only {
+    @media (max-width: 599px) { @content; }
+  } @else if $size == tablet-portrait-up {
+    @media (min-width: 600px) { @content; }
+  } @else if $size == tablet-landscape-up {
+    @media (min-width: 900px) { @content; }
+  } @else if $size == desktop-up {
+    @media (min-width: 1200px) { @content; }
+  } @else if $size == big-desktop-up {
+    @media (min-width: 1800px) { @content; }
+  }
+} */
+
+body {
+  font-family: 'Georgia', serif;
+}
+
+.main, .summary-head, p.summary {
+  margin: 0 auto;
+  width: 75%;
+}
+
+.summary-head {
+  padding: 2% 0;
+  font-weight: bold;
+  font-size: 1.25em;
+}
+
+
+p.summary {
+  margin-bottom: 2%;
+  line-height: 1.6;
+}
+
+#title {
+  font-family: 'UnifrakturMaguntia', cursive;
+  font-size: 36px;
+  font-weight: 900px;
+  padding: 1% 0 1% 0;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#product-header {
+  padding: 50px 0 20px 0;
+  font-size: 24px;
+  font-family: 'Alfa Slab One', cursive;
+  font-weight: 400;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.directions {
+  font-family: 'arial', cursive;
+  font-size: 13px;
+  font-weight: 400;
+  padding: 10px 0 9px 0;
+  text-transform: uppercase;
+}
+
+.directions-2 {
+  border-bottom: 2px solid #000;
+}
+
+.app-container {
+  margin-top: 5%;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+button {
+  background: transparent;
+  border: 2px solid black;
+  border-radius: 6px;
+  padding:16px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 12px;
+  margin: 20px 10px;
+  text-transform: uppercase;
+}
+
+button:hover {
+     background-color: #008CBA;
+     color: white;
+}
+
+#userinput {
+  font-family: 'arial', cursive;
+  font-size: 16px;
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+  height: 100px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.summary, h2 {
+  margin: 0 15px;
+}
+
+/* MOBILE */
+
+@media only screen and (max-width: 599px) {
+  #title {
+    font-size: 28px;
+    padding: 2% 0 1% 0;
+  }
+}
+
+
+/* Extended base styles (site specific)
+Common shared styles
+Page structure
+Navigation
+Headings
+Footer
+Forms
+Printer styles
+Handheld styles */

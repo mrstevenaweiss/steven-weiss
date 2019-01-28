@@ -4,19 +4,20 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>hamilton simulator</title>
-    <script src="../p5-libs/test.js"></script>
-    <script src="../p5-libs/p5.min.js"></script>
-    <script src="../p5-libs/addons/p5.dom.min.js"></script>
-    <script src="../p5-libs/addons/p5.sound.min.js"></script>
+    <script src="../../assets/p5/p5-libs/test.js"></script>
+    <script src="../../assets/p5/p5-libs/p5.min.js"></script>
+    <script src="../../assets/p5/p5-libs/addons/p5.dom.min.js"></script>
+    <script src="../../assets/p5/p5-libs/addons/p5.sound.min.js"></script>
+
     <link rel="stylesheet" href="hamilton.css">
     <script src="sketch.js"></script>
     <script type="text/javascript" src="songs.js"></script>
   </head>
   <body>
-    <h1>Hamilton Lottery Simulator</h1>
+    <h1>Hamilton Lottery Karoake</h1>
     <p>THe simulator assume 10 pairs of tickets available each night with <span id="entrants" contenteditable>50000</span> people entering each lottery</p>
-    <p>You have 1 in <span id="change"> 5000</span> chance of winning</p>
-    <p>In order to have a <span id="99percent"></span>99% chance of winning the lottery at least one time, you must play ~23,000 times.
+    <p>You have 1 in <span id="chance"> 5000</span> chance of winning</p>
+    <p>In order to have a 99% chance of winning the lottery at least one time, you must play <span id="99percent">23000</span> times.
     <br>
     <!-- <p>
       Movies: <input id="userinput" type="text" name="movie" value="">
@@ -29,6 +30,8 @@
       You have played <span id="total">0</span> times.
     </p>
     <p id="results">
+    </p>
+    <p id="words">
     </p>
   </body>
 </html>

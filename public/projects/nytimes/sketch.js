@@ -4,7 +4,7 @@ let buttonClear;
 let hello;
 let keyIndex;
 let spaceButton;
-var key = '085377149a91472ea587824181be1fe6'
+var newkey = 'LbV61zluAnWE9EXGehRKr6UtEekzmsZT'
 
 function setup () {
   noCanvas();
@@ -19,7 +19,6 @@ function setup () {
   spaceButton = document.getElementById('main-button');
   spaceButton.addEventListener("keydown", (event) => {
     if (event.keyCode == 32) {
-      console.log('space bar', event);
       goTimes()
     }
   })
@@ -45,9 +44,9 @@ function goTimes() {
 
   for (let i = 0; i < movies.length; i++) {
     let movie = movies[i].replace(/ /g, "%20")
-    let request = `https://api.nytimes.com/svc/movies/v2/reviews/search.json?query=${movie}&api-key=${key}`
+    let request = `https://api.nytimes.com/svc/movies/v2/reviews/picks.json?query=${movie}&order=by-title&api-key=${newkey}`
 
-    loadJSON(request, gotData, 'jsonp');
+    loadJSON(request, gotData);
   }
 }
 
@@ -59,7 +58,7 @@ function gotData(data) {
   for (let i = 0; i < movieData.length ; i++) {
 
     if (movieData[i].critics_pick == 1) {
-      createElement('h2', movieData[i].display_title);
+      createElement('h2', movieData[i].display_title).addClass('summary-head');;;
       createElement('p', movieData[i].summary_short).addClass('summary');;
 
     }
