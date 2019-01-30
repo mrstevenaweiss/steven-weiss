@@ -99,8 +99,17 @@ table {
   }
 }
 
-#population, #submit {
+#population, #submit, #rate, #submit-1 {
   display: inline-block;
+}
+
+ol, .population, .rate, #what {
+  display: block;
+  margin-bottom: 2%;
+}
+
+ol, #rules {
+  line-height: 1.4;
 }
 
 a {
@@ -113,10 +122,6 @@ a {
 main {
   margin-left: 5%;
   font-family: 'Zilla Slab', serif;
-}
-
-ol, #what, #submit {
-  margin-bottom: 2%;
 }
 
 #rules {

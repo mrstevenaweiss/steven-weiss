@@ -15,8 +15,11 @@ let grid;
 let cols;
 let rows;
 let resolution;
+let fr = 15;
 
 function setup() {
+
+  frameRate(fr);
 
   entrants = select('#entrants')
 
