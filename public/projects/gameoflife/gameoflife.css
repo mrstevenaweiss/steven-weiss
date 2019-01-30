@@ -99,7 +99,26 @@ table {
   }
 }
 
-body {
-  margin-right: 25%;
-  margin-left: 25%;
+#population, #submit {
+  display: inline-block;
+}
+
+a {
+  font-size: 24px;
+  color: blue;
+  margin: 10px;
+
+}
+
+main {
+  margin-left: 5%;
+  font-family: 'Zilla Slab', serif;
+}
+
+ol, #what, #submit {
+  margin-bottom: 2%;
+}
+
+#rules {
+  text-decoration: underline;
 }

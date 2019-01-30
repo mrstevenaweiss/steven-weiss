@@ -10,31 +10,45 @@
     <script src="../../assets/p5/addons/p5.dom.min.js"></script>
     <script src="../../assets/p5/addons/p5.sound.min.js"></script>
     <link rel="stylesheet" href="gameoflife.css">
+    <link href="https://fonts.googleapis.com/css?family=Zilla+Slab:300,400,700" rel="stylesheet">
 
     <script src="sketch.js"></script>
   </head>
   <body>
+    <main>
 
-    <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life#Rules">
-      <h1>THE GAME OF LIFE</h1>
-    </a>
+      <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life#Rules">
+        <h1>THE GAME OF LIFE</h1>
+      </a>
 
-    <h2>What is it?</h2>
-    <p></p>
+      <h2 id="what">What is it?</h2>
+      <p></p>
 
-    <p>The Rules</p>
-    <ol>
-      <li>Any live cell with fewer than two live neighbors dies, as if by underpopulation.</li>
-      <li>
-        Any live cell with two or three live neighbors lives on to the next generation.
-      </li>
-      <li>
-        Any live cell with more than three live neighbors dies, as if by overpopulation.
-      </li>
-      <li>
-        Any dead cell with exactly three live neighbors becomes a live cell, as if by reproduction.
-      </li>
-    </ol>
+      <p id="rules">The Rules</p>
+      <ol>
+        <li>Any live cell with fewer than two live neighbors dies, as if by underpopulation.</li>
+        <li>
+          Any live cell with two or three live neighbors lives on to the next generation.
+        </li>
+        <li>
+          Any live cell with more than three live neighbors dies, as if by overpopulation.
+        </li>
+        <li>
+          Any dead cell with exactly three live neighbors becomes a live cell, as if by reproduction.
+        </li>
+      </ol>
 
+      <p id="population">Change the population size:
+          <select id="entrants">
+            <option class="volvo" value="4">4</option>
+            <option class="volvo" value="5">5</option>
+            <option class="volvo" value="8">8</option>
+            <option class="volvo" value="10">10</option>
+          </select>
+        <!-- <input type="text" name="" value=""> -->
+      </p>
+      <button id="submit" type="button" name="button">Change</button>
+
+  </main>
   </body>
 </html>

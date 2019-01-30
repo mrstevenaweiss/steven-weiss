@@ -203,6 +203,12 @@ a:hover {
 
 ul li {
   /* change font to be relative */
-  width: 100%;
   margin-bottom: 3%;
 }
+
+
+
+@media screen and (min-width: 599px){
+     
+
+ }

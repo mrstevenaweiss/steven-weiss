@@ -1,3 +1,6 @@
+
+
+
 function make2DArray(cols, rows) {
   let arr = new Array(cols);
 
@@ -11,26 +14,33 @@ function make2DArray(cols, rows) {
 let grid;
 let cols;
 let rows;
-let resolution = 10;
+let resolution;
 
 function setup() {
 
-  createCanvas(600, 400)
-  cols = width / resolution;
-  rows = height / resolution;
+  entrants = select('#entrants')
 
-  grid = make2DArray(cols, rows);
-  for (let i = 0 ; i < cols; i++) {
-    for (let j = 0; j < rows; j++) {
-      grid[i][j] = floor(random(2))
+  submit = select('#submit')
+  submit.mousePressed(() => {
+    resolution = entrants.value();
+
+    cols = width / resolution;
+    rows = height / resolution;
+
+    grid = make2DArray(cols, rows);
+    for (let i = 0 ; i < cols; i++) {
+      for (let j = 0; j < rows; j++) {
+        grid[i][j] = floor(random(2))
+      }
     }
-  }
+  })
+
+  createCanvas(1400, 400)
 }
 
 
 function draw() {
   background(0)
-
   for (let i = 0 ; i < cols; i++) {
     for (let j = 0; j < rows; j++) {
       let x = i * resolution;
@@ -78,3 +88,13 @@ function countNeighbors(grid, x, y) {
   sum -= grid[x][y];
   return sum;
 }
+
+
+
+window.onresize = function() {
+  let w = window.innerWidth;
+  let h = window.innerHeight;
+  canvas.size(w,h);
+  width = w;
+  height = h;
+};

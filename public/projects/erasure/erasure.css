@@ -90,10 +90,56 @@ table {
 } */
 
 body {
-  font-size: 28px;
-  background-color: green;
+  line-height: 1.6;
+  font-family: Arial, sans-serif;
+  text-align: justify;
+  font-family: 'Zilla Slab', serif;
 }
 
+header {
+  background-color: #1e90ff;
+  border-bottom: 2px solid grey;
+  margin-bottom: 2%;
+}
+
+a {
+  color: black;
+}
+
+button {
+  margin-bottom: 3%;
+}
+
+#title, #submit, #link-p {
+  margin-left: 3%;
+}
+
+#title {
+  padding-top: 3%;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+#submit  {
+  display: block;
+  margin-bottom: 3%;
+}
+
+#link-p {
+  margin-bottom: 3%;
+}
+
+p.text {
+  margin: 0 30% 3% 30%;
+  font-weight: 300;
+  font-family: 'Zilla Slab', serif;
+}
+
+p.character {
+  font-weight: 700;
+  font-family: 'Zilla Slab', serif;
+  margin: 1% 30%;
+}
 
 /* MOBILE */
 

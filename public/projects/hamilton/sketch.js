@@ -43,7 +43,6 @@ function startLottery() {
 function draw() {
 
   // var lyrics = "How does a bastard, orphan, son of a whore and a Scotsman, dropped in the middle of a forgotten Spot in the Caribbean by providence, impoverished, in squalor, Grow up to be a hero and a scholar?"
-  console.log(number);
   var song =  lyrics[number]
 
   list = song.split(', ')
