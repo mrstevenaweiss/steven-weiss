@@ -1,0 +1,48 @@
+html, body, a {
+  font-family: 'Righteous', cursive;
+  animation: myanimation 30s infinite;
+}
+
+@keyframes myanimation {
+  0% {color: black;}
+  25%{color:#f93e3e;}
+  50%{color:#4286f4;}
+  75%{color:#8d13f2;}
+  100% {color: #efa700;}
+}
+
+ul, a, li {
+  font-family: 'Josefin Sans', sans-serif;
+  list-style: none;
+}
+li {
+  padding-bottom: 2%;
+}
+
+i {
+  font-size: 2em;
+}
+
+ul {
+  padding-left: 1%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.icons {
+  display: inline;
+}
+
+#title {
+  font-size: 8em;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+#links {
+  margin-left: 1%;
+  margin-bottom: 15%;
+}
