@@ -36,7 +36,7 @@ a {
 }
 
 #title {
-  font-size: 8em;
+  font-size: 5em;
   margin: 0;
   padding: 0;
   display: inline-block;
@@ -44,5 +44,5 @@ a {
 
 #links {
   margin-left: 1%;
-  margin-bottom: 15%;
+  margin-bottom: 5%;
 }
